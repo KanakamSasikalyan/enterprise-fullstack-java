@@ -1,0 +1,25 @@
+
+MultiThreading: Is the core concept that java programming , where it allowing multiple threads of a process
+to execute simultaneosly to use the maximum utilization of CPU.
+
+Thread:
+-is the small unit or Light weight unit of the process
+-shares memory with other threads
+
+Process:
+- we can define as the program under execution
+- inter-process communication
+
+There are two different ways to create threads in Java:
+- by extending Thread class
+- by implementing Runnable interface
+
+Life Cycle of Threads:
+
+New --> Thread created but not yet running
+Runnable --> Queued for running, wating for CPU time.
+Running --> Threading running in the CPU.
+Waiting --> Waiting for the user i/o, memory, or other thread
+Time waiting --> Waits until time count down expires...continies after time out
+Blocked --> Thread execution blocked.
+Termiated --> execution completed.
