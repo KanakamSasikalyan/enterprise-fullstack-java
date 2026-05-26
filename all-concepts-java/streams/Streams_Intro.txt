@@ -1,0 +1,7 @@
+
+Stream API is the popular concept in java which introduced functional type of programming language
+we can perform the functional type operations on collections.
+
+Think as the we have the assmebly lines where data flow to processing statios one by one stage
+
+Data source -> stream -> intermediate ops -> terminal ops -> result

@@ -1,0 +1,8 @@
+Serialization:
+It is the process of converting the object into the byte stream so that we can able to trasfer these
+byte stream so that we can save into a file, sent over a network, and stored in database.
+
+how serialization works:
+
+object in memory --> serialize --> byte stream --> file/network --> deserialize --> object in memory
+
