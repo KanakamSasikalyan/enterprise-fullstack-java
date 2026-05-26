@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+    <bean id="Atom" class="ioc.spring.Atom"/>
+    <!--    alias name-->
+    <alias name="Atom" alias="atom"/>
+
+<!--    atomicNumber;-->
+<!--    atomicMass;-->
+<!--    atomicRadius;-->
+<!--    density;-->
+
+    <bean id="Hydrogen" class="ioc.spring.Atom">
+        <property name="atomicNumber" value="1"/>
+        <property name="atomicMass" value="1.008d"/>
+        <property name="atomicRadius" value="31"/>
+        <property name="density" value="0.08988"/>
+    </bean>
+
+    <bean id="Carbon" class="ioc.spring.Atom">
+        <property name="atomicNumber" value="6"/>
+        <property name="atomicMass" value="12.011d"/>
+        <property name="atomicRadius" value="77"/>
+        <property name="density" value="2.266"/>
+    </bean>
+
+</beans>
