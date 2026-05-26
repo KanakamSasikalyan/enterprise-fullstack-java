@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Expense Tracker Application</title>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <label>name: </label>
+        <input type="text" id="name"><br/><br/>
+
+        <label>dob: </label>
+        <input type="text" id="dob"><br/><br/>
+
+        <label>email: </label>
+        <input type="text" id="email"><br/><br/>
+
+        <label>mobile: </label>
+        <input type="text" id="mobile"><br/><br/>
+
+        <label>altMobile: </label>
+        <input type="text" id="altMobile"><br/><br/>
+
+        <button onclick="createUser()">Create User</button>
+
+        <p id="result">Result: </p>
+
+        <script>
+            function createUser(){
+                const user = {
+                    name: document.getElementById("name").value,
+                    dob: document.getElementById("dob").value,
+                    email: document.getElementById("email").value,
+                    mobile: document.getElementById("mobile").value,
+                    altMobile: document.getElementById("altMobile").value
+                };
+
+                fetch('/api/user/v1/new-user', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(user)
+                })
+                .then(response => {
+                  if(!response.ok){
+                    throw new Error("Failed to create user");
+                  }
+                  return response.json();
+                })
+                .then(data => {
+                    document.getElementById("result").innerText
+                    = "User Created successfully! ID: "+ data.id;
+                })
+                .catch(error => {
+                    document.getElementById("result").innerText = "Error:" + error.message;
+                })
+            }
+        </script>
+    </body>
+</html>

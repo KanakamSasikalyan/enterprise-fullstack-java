@@ -1,0 +1,5 @@
+{id=1, expenseType='Food', expenseDesc='McDonalds', amount=500.34}
+{id=2, expenseType='Shopping', expenseDesc='Cargo Pants', amount=1500.14}
+{id=3, expenseType='Food', expenseDesc='Zepto Cafe', amount=2000.45}
+{id=4, expenseType='Food', expenseDesc='Zepto Cafe', amount=1400.45}
+{id=5, expenseType='Shopping', expenseDesc='T-shirts', amount=600.0}

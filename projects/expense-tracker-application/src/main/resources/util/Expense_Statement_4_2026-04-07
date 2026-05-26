@@ -1,0 +1,4 @@
+
+{id=6, expenseType='Food', expenseDesc='Pizza', amount=120.0}
+{id=7, expenseType='Shooping', expenseDesc='T-shits', amount=1200.0}
+{id=8, expenseType='Travel', expenseDesc='City', amount=300.0}

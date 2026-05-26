@@ -1,0 +1,5 @@
+Expense{id=1, expenseType='Food', expenseDesc='McDonalds', amount=500.34, createdAt=2026-04-07, updatedAt=2026-04-07, user=io.expense.tracker.app.entity.CustomUser@6d8b6cb9}
+Expense{id=2, expenseType='Shopping', expenseDesc='Cargo Pants', amount=1500.14, createdAt=2026-04-07, updatedAt=2026-04-07, user=io.expense.tracker.app.entity.CustomUser@6d8b6cb9}
+Expense{id=3, expenseType='Food', expenseDesc='Zepto Cafe', amount=2000.45, createdAt=2026-04-07, updatedAt=2026-04-07, user=io.expense.tracker.app.entity.CustomUser@6d8b6cb9}
+Expense{id=4, expenseType='Food', expenseDesc='Zepto Cafe', amount=1400.45, createdAt=2026-04-07, updatedAt=2026-04-07, user=io.expense.tracker.app.entity.CustomUser@eccbb41}
+Expense{id=5, expenseType='Shopping', expenseDesc='T-shirts', amount=600.0, createdAt=2026-04-07, updatedAt=2026-04-07, user=io.expense.tracker.app.entity.CustomUser@eccbb41}

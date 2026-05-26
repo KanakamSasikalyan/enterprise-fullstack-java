@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Delete User</title>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <h2>Delete User</h2>
+        <label>User ID: </label>
+        <input type="text" id="userId">
+
+        <button onclick="deleteUser()">Delete User</button>
+
+        <p id="result">Result: </p>
+    </body>
+
+    <script>
+        function deleteUser(){
+
+            const id = document.getElementById("userId").value;
+
+            fetch(`/api/user/v1/delete-user/${id}`, {
+                method: 'DELETE'
+            })
+            .then(response => {
+                if(!response.ok){
+                    throw new Error("failed to delete");
+                }
+                return response.json();
+            })
+            .then(result => {
+                if(result === true){
+                    document.getElementById("result").innerText = "User Deleted Successfully!";
+                }else{
+                    document.getElementById("result").innerText = "Failed to delete";
+                }
+            }).catch(error => {
+                document.getElementById("result").innerText = "Error: " + error.message;
+            });
+        }
+    </script>
+</html>
